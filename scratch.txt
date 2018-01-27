@@ -1,0 +1,59 @@
+
+# Design Principles
+# 1.    Favor composition over inheritance
+# 2.    Encapsulate what varies
+# 3.    Program to interface not implementation
+# 4.    Strives use loosely coupled design
+# 5.    Make classes open to extension but closed to editing
+# 6.    Depend upon abstractions. Do not depend upon concrete classes
+# 7.    Principle of least knowledge: talk only to your immediate friends
+# 8.    "Don't call us we'll call you"; high level components make the calls
+# 9.    A class should only have one reason to change; principle of single responsibility
+
+
+# Design Patterns
+# Creational: Concerned with object creation
+# Structure: Deal with the composition of objects and classes
+# Behavioral: Characterize the way classes/objects interact or distribute responsibility
+# 1.    Strategy                        Behavioral Classes
+# 2.    Observer                        Behavioral Objects
+# 3.    Decorator                       Structural Objects
+# 4.    Factory Method                  Creational Classes
+# 5.    Abstract Factory                Creational Objects
+# 6.    Singleton                       Creational Object
+# 7.    Adapter                         Structural Class or Object
+# 8.    Facade                          Structural Object
+# 9.    Template                        Behavioral Class
+# 10    Mediator                        Behavioral Object
+# 11.   Iterator                        Behavioral Object
+# 12.   Composite                       Structural Object
+# 13.   State                           Behavioral Object
+# 14.   Proxy                           Structural Object
+# 15.   Command
+
+Salmon/ Shrimp
+
+Mediator Pattern:
+https://en.wikipedia.org/wiki/Mediator_pattern
+    Promotes loose coupling by defining a mediator object that handles communication between
+    its "colleagues"
+        Collegue_1 <--> Mediator <--> Collegue_2
+
+A template method calls 1 or more abstract methods that are implemented in the sub-classes
+so calling the template method with a subclass does the sub class's and/or super class's
+methods that are in the template method.
+
+/************************************************************************/
+
+TODO's:
+    1. Make invader factory or class hierarchy
+    2. Place towers as images in cells                              DONE
+    3. Handle invaders dying                                        DONE
+    4. Handle combining towers                                      DONE
+    5. Implement template pattern                                   DONE-ish
+    6. Implement observer?
+    7. Health bars
+    8. Handle what happens when invaders get to the end of the path DONE
+    9. REFACTOR YOUR BAD CODE
+        - update functions in one place (main loop)                 DONE-ish
+    10. Look for bug where tower shoots 2 targets
